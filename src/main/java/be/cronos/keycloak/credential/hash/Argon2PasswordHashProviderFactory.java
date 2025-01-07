@@ -36,4 +36,9 @@ public class Argon2PasswordHashProviderFactory implements PasswordHashProviderFa
     public void close() {
         // noop
     }
+
+    @Override
+    public int order(){
+        return 400;
+    }
 }

@@ -63,4 +63,9 @@ public abstract class Argon2GenericPolicyProviderFactory implements PasswordPoli
     public void close() {
         // noop
     }
+
+    @Override
+    public int order(){
+        return 400;
+    }
 }
